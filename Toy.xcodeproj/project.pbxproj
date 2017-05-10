@@ -1,0 +1,805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		121FCA2B1EB63D1300D1070D /* ToyCube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 121FCA291EB63D1300D1070D /* ToyCube.cpp */; };
+		121FCA321EB644F700D1070D /* ToyScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 121FCA301EB644F700D1070D /* ToyScene.cpp */; };
+		121FCA361EB64E2300D1070D /* ToyShaders in Resources */ = {isa = PBXBuildFile; fileRef = 121FCA351EB64E2300D1070D /* ToyShaders */; };
+		1228EDC11EB4E732003CEEB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1228EDC01EB4E732003CEEB3 /* main.m */; };
+		1228EDC41EB4E732003CEEB3 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1228EDC31EB4E732003CEEB3 /* AppDelegate.mm */; };
+		1228EDC71EB4E732003CEEB3 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1228EDC61EB4E732003CEEB3 /* ViewController.mm */; };
+		1228EDCA1EB4E732003CEEB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1228EDC81EB4E732003CEEB3 /* Main.storyboard */; };
+		1228EDCC1EB4E732003CEEB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1228EDCB1EB4E732003CEEB3 /* Assets.xcassets */; };
+		1228EDCF1EB4E732003CEEB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1228EDCD1EB4E732003CEEB3 /* LaunchScreen.storyboard */; };
+		1228EDDA1EB4E732003CEEB3 /* ToyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1228EDD91EB4E732003CEEB3 /* ToyTests.m */; };
+		1228EDE51EB4E732003CEEB3 /* ToyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1228EDE41EB4E732003CEEB3 /* ToyUITests.m */; };
+		1228EDF91EB4E8E7003CEEB3 /* Toyvec2.c in Sources */ = {isa = PBXBuildFile; fileRef = 1228EDF71EB4E8E7003CEEB3 /* Toyvec2.c */; };
+		1228EDFC1EB4E9DE003CEEB3 /* Toyvec3.c in Sources */ = {isa = PBXBuildFile; fileRef = 1228EDFA1EB4E9DE003CEEB3 /* Toyvec3.c */; };
+		1228EDFF1EB4EA01003CEEB3 /* Toyvec4.c in Sources */ = {isa = PBXBuildFile; fileRef = 1228EDFD1EB4EA01003CEEB3 /* Toyvec4.c */; };
+		1228EE021EB4EA27003CEEB3 /* Toymat3.c in Sources */ = {isa = PBXBuildFile; fileRef = 1228EE001EB4EA27003CEEB3 /* Toymat3.c */; };
+		1228EE051EB4EA4A003CEEB3 /* Toymat4.c in Sources */ = {isa = PBXBuildFile; fileRef = 1228EE031EB4EA4A003CEEB3 /* Toymat4.c */; };
+		1228EE091EB4EE52003CEEB3 /* Toymatstack.c in Sources */ = {isa = PBXBuildFile; fileRef = 1228EE071EB4EE52003CEEB3 /* Toymatstack.c */; };
+		1228EE0C1EB4EED3003CEEB3 /* ToyGLmatrix.c in Sources */ = {isa = PBXBuildFile; fileRef = 1228EE0A1EB4EED3003CEEB3 /* ToyGLmatrix.c */; };
+		1228EE0F1EB4F991003CEEB3 /* ToyApplication.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1228EE0D1EB4F991003CEEB3 /* ToyApplication.cpp */; };
+		1228EE141EB4FB14003CEEB3 /* ToyLoop.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1228EE131EB4FB14003CEEB3 /* ToyLoop.mm */; };
+		1228EE1B1EB4FBEE003CEEB3 /* ToyApplication.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1228EE1A1EB4FBED003CEEB3 /* ToyApplication.mm */; };
+		1228EE1E1EB4FC6E003CEEB3 /* ToyDirector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1228EE1C1EB4FC6E003CEEB3 /* ToyDirector.cpp */; };
+		1228EE231EB4FDBC003CEEB3 /* ToyGLview.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1228EE221EB4FDBC003CEEB3 /* ToyGLview.mm */; };
+		1228EE271EB4FFB4003CEEB3 /* ToyGLFrameBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1228EE251EB4FFB4003CEEB3 /* ToyGLFrameBuffer.cpp */; };
+		1228EE291EB5055A003CEEB3 /* ToyGLFrameBuffer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1228EE281EB5055A003CEEB3 /* ToyGLFrameBuffer.mm */; };
+		1228EE2A1EB50C01003CEEB3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1228EE181EB4FB71003CEEB3 /* OpenGLES.framework */; };
+		1228EE2B1EB50C07003CEEB3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1228EE161EB4FB6B003CEEB3 /* QuartzCore.framework */; };
+		1228EE2E1EB50D48003CEEB3 /* ToyGLProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1228EE2C1EB50D48003CEEB3 /* ToyGLProgram.cpp */; };
+		1228EE311EB50EEB003CEEB3 /* ToyFileUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1228EE2F1EB50EEB003CEEB3 /* ToyFileUtils.cpp */; };
+		1228EE331EB50FD2003CEEB3 /* ToyFileUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1228EE321EB50FD2003CEEB3 /* ToyFileUtils.mm */; };
+		1229BC4B1EB5A11D001EB5F3 /* ToyObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1229BC491EB5A11D001EB5F3 /* ToyObject.cpp */; };
+		1229BC4E1EB5A3AA001EB5F3 /* ToyGLProgramCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1229BC4C1EB5A3AA001EB5F3 /* ToyGLProgramCache.cpp */; };
+		1229BC511EB5A72D001EB5F3 /* ToyCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1229BC4F1EB5A72D001EB5F3 /* ToyCamera.cpp */; };
+		126FBA011EBEE10800FD27FB /* ToyObjLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 126FB9FF1EBEE10800FD27FB /* ToyObjLoader.cpp */; };
+		127E51E31EB6E0AC008D0E99 /* ToySceneDiffuse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 127E51E11EB6E0AC008D0E99 /* ToySceneDiffuse.cpp */; };
+		127E51E61EB6FA82008D0E99 /* ToyTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 127E51E41EB6FA82008D0E99 /* ToyTest.cpp */; };
+		127E51E91EB703D9008D0E99 /* ToyTorus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 127E51E71EB703D9008D0E99 /* ToyTorus.cpp */; };
+		127E51F31EB78CB8008D0E99 /* ToySceneAds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 127E51F11EB78CB8008D0E99 /* ToySceneAds.cpp */; };
+		12D8E37E1EC228E500808E2F /* ToyTeapot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12D8E37C1EC228E500808E2F /* ToyTeapot.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1228EDD61EB4E732003CEEB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1228EDB41EB4E732003CEEB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1228EDBB1EB4E732003CEEB3;
+			remoteInfo = Toy;
+		};
+		1228EDE11EB4E732003CEEB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1228EDB41EB4E732003CEEB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1228EDBB1EB4E732003CEEB3;
+			remoteInfo = Toy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		121FCA291EB63D1300D1070D /* ToyCube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToyCube.cpp; sourceTree = "<group>"; };
+		121FCA2A1EB63D1300D1070D /* ToyCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToyCube.h; sourceTree = "<group>"; };
+		121FCA2C1EB640B800D1070D /* Toymath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Toymath.h; sourceTree = "<group>"; };
+		121FCA301EB644F700D1070D /* ToyScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToyScene.cpp; sourceTree = "<group>"; };
+		121FCA311EB644F700D1070D /* ToyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToyScene.h; sourceTree = "<group>"; };
+		121FCA351EB64E2300D1070D /* ToyShaders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ToyShaders; sourceTree = "<group>"; };
+		1228EDBC1EB4E732003CEEB3 /* Toy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Toy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1228EDC01EB4E732003CEEB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1228EDC21EB4E732003CEEB3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1228EDC31EB4E732003CEEB3 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		1228EDC51EB4E732003CEEB3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1228EDC61EB4E732003CEEB3 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		1228EDC91EB4E732003CEEB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1228EDCB1EB4E732003CEEB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1228EDCE1EB4E732003CEEB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1228EDD01EB4E732003CEEB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1228EDD51EB4E732003CEEB3 /* ToyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1228EDD91EB4E732003CEEB3 /* ToyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToyTests.m; sourceTree = "<group>"; };
+		1228EDDB1EB4E732003CEEB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1228EDE01EB4E732003CEEB3 /* ToyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1228EDE41EB4E732003CEEB3 /* ToyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToyUITests.m; sourceTree = "<group>"; };
+		1228EDE61EB4E732003CEEB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1228EDF71EB4E8E7003CEEB3 /* Toyvec2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Toyvec2.c; sourceTree = "<group>"; };
+		1228EDF81EB4E8E7003CEEB3 /* Toyvec2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toyvec2.h; sourceTree = "<group>"; };
+		1228EDFA1EB4E9DE003CEEB3 /* Toyvec3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Toyvec3.c; sourceTree = "<group>"; };
+		1228EDFB1EB4E9DE003CEEB3 /* Toyvec3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toyvec3.h; sourceTree = "<group>"; };
+		1228EDFD1EB4EA01003CEEB3 /* Toyvec4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Toyvec4.c; sourceTree = "<group>"; };
+		1228EDFE1EB4EA01003CEEB3 /* Toyvec4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toyvec4.h; sourceTree = "<group>"; };
+		1228EE001EB4EA27003CEEB3 /* Toymat3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Toymat3.c; sourceTree = "<group>"; };
+		1228EE011EB4EA27003CEEB3 /* Toymat3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toymat3.h; sourceTree = "<group>"; };
+		1228EE031EB4EA4A003CEEB3 /* Toymat4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Toymat4.c; sourceTree = "<group>"; };
+		1228EE041EB4EA4A003CEEB3 /* Toymat4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toymat4.h; sourceTree = "<group>"; };
+		1228EE061EB4ED3C003CEEB3 /* Toymathcommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Toymathcommon.h; sourceTree = "<group>"; };
+		1228EE071EB4EE52003CEEB3 /* Toymatstack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Toymatstack.c; sourceTree = "<group>"; };
+		1228EE081EB4EE52003CEEB3 /* Toymatstack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toymatstack.h; sourceTree = "<group>"; };
+		1228EE0A1EB4EED3003CEEB3 /* ToyGLmatrix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ToyGLmatrix.c; sourceTree = "<group>"; };
+		1228EE0B1EB4EED3003CEEB3 /* ToyGLmatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToyGLmatrix.h; sourceTree = "<group>"; };
+		1228EE0D1EB4F991003CEEB3 /* ToyApplication.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToyApplication.cpp; sourceTree = "<group>"; };
+		1228EE0E1EB4F991003CEEB3 /* ToyApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToyApplication.h; sourceTree = "<group>"; };
+		1228EE121EB4FB14003CEEB3 /* ToyLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToyLoop.h; sourceTree = "<group>"; };
+		1228EE131EB4FB14003CEEB3 /* ToyLoop.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ToyLoop.mm; sourceTree = "<group>"; };
+		1228EE161EB4FB6B003CEEB3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1228EE181EB4FB71003CEEB3 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		1228EE1A1EB4FBED003CEEB3 /* ToyApplication.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ToyApplication.mm; sourceTree = "<group>"; };
+		1228EE1C1EB4FC6E003CEEB3 /* ToyDirector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToyDirector.cpp; sourceTree = "<group>"; };
+		1228EE1D1EB4FC6E003CEEB3 /* ToyDirector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToyDirector.h; sourceTree = "<group>"; };
+		1228EE211EB4FDBC003CEEB3 /* ToyGLview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToyGLview.h; sourceTree = "<group>"; };
+		1228EE221EB4FDBC003CEEB3 /* ToyGLview.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ToyGLview.mm; sourceTree = "<group>"; };
+		1228EE251EB4FFB4003CEEB3 /* ToyGLFrameBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToyGLFrameBuffer.cpp; sourceTree = "<group>"; };
+		1228EE261EB4FFB4003CEEB3 /* ToyGLFrameBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToyGLFrameBuffer.h; sourceTree = "<group>"; };
+		1228EE281EB5055A003CEEB3 /* ToyGLFrameBuffer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ToyGLFrameBuffer.mm; sourceTree = "<group>"; };
+		1228EE2C1EB50D48003CEEB3 /* ToyGLProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToyGLProgram.cpp; sourceTree = "<group>"; };
+		1228EE2D1EB50D48003CEEB3 /* ToyGLProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToyGLProgram.h; sourceTree = "<group>"; };
+		1228EE2F1EB50EEB003CEEB3 /* ToyFileUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToyFileUtils.cpp; sourceTree = "<group>"; };
+		1228EE301EB50EEB003CEEB3 /* ToyFileUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToyFileUtils.h; sourceTree = "<group>"; };
+		1228EE321EB50FD2003CEEB3 /* ToyFileUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ToyFileUtils.mm; sourceTree = "<group>"; };
+		1229BC491EB5A11D001EB5F3 /* ToyObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToyObject.cpp; sourceTree = "<group>"; };
+		1229BC4A1EB5A11D001EB5F3 /* ToyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToyObject.h; sourceTree = "<group>"; };
+		1229BC4C1EB5A3AA001EB5F3 /* ToyGLProgramCache.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToyGLProgramCache.cpp; sourceTree = "<group>"; };
+		1229BC4D1EB5A3AA001EB5F3 /* ToyGLProgramCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToyGLProgramCache.h; sourceTree = "<group>"; };
+		1229BC4F1EB5A72D001EB5F3 /* ToyCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToyCamera.cpp; sourceTree = "<group>"; };
+		1229BC501EB5A72D001EB5F3 /* ToyCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToyCamera.h; sourceTree = "<group>"; };
+		126FB9FF1EBEE10800FD27FB /* ToyObjLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToyObjLoader.cpp; sourceTree = "<group>"; };
+		126FBA001EBEE10800FD27FB /* ToyObjLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToyObjLoader.h; sourceTree = "<group>"; };
+		127E51E11EB6E0AC008D0E99 /* ToySceneDiffuse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToySceneDiffuse.cpp; sourceTree = "<group>"; };
+		127E51E21EB6E0AC008D0E99 /* ToySceneDiffuse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToySceneDiffuse.h; sourceTree = "<group>"; };
+		127E51E41EB6FA82008D0E99 /* ToyTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToyTest.cpp; sourceTree = "<group>"; };
+		127E51E51EB6FA82008D0E99 /* ToyTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToyTest.h; sourceTree = "<group>"; };
+		127E51E71EB703D9008D0E99 /* ToyTorus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToyTorus.cpp; sourceTree = "<group>"; };
+		127E51E81EB703D9008D0E99 /* ToyTorus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToyTorus.h; sourceTree = "<group>"; };
+		127E51F11EB78CB8008D0E99 /* ToySceneAds.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToySceneAds.cpp; sourceTree = "<group>"; };
+		127E51F21EB78CB8008D0E99 /* ToySceneAds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToySceneAds.h; sourceTree = "<group>"; };
+		12D8E37B1EC228BC00808E2F /* ToyTeapotData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToyTeapotData.h; sourceTree = "<group>"; };
+		12D8E37C1EC228E500808E2F /* ToyTeapot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToyTeapot.cpp; sourceTree = "<group>"; };
+		12D8E37D1EC228E500808E2F /* ToyTeapot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToyTeapot.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1228EDB91EB4E732003CEEB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1228EE2B1EB50C07003CEEB3 /* QuartzCore.framework in Frameworks */,
+				1228EE2A1EB50C01003CEEB3 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1228EDD21EB4E732003CEEB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1228EDDD1EB4E732003CEEB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		121FCA281EB63CEE00D1070D /* ToyTest */ = {
+			isa = PBXGroup;
+			children = (
+				121FCA291EB63D1300D1070D /* ToyCube.cpp */,
+				121FCA2A1EB63D1300D1070D /* ToyCube.h */,
+				121FCA301EB644F700D1070D /* ToyScene.cpp */,
+				121FCA311EB644F700D1070D /* ToyScene.h */,
+				127E51E11EB6E0AC008D0E99 /* ToySceneDiffuse.cpp */,
+				127E51E21EB6E0AC008D0E99 /* ToySceneDiffuse.h */,
+				127E51E41EB6FA82008D0E99 /* ToyTest.cpp */,
+				127E51E51EB6FA82008D0E99 /* ToyTest.h */,
+				127E51E71EB703D9008D0E99 /* ToyTorus.cpp */,
+				127E51E81EB703D9008D0E99 /* ToyTorus.h */,
+				127E51F11EB78CB8008D0E99 /* ToySceneAds.cpp */,
+				127E51F21EB78CB8008D0E99 /* ToySceneAds.h */,
+				12D8E37B1EC228BC00808E2F /* ToyTeapotData.h */,
+				12D8E37C1EC228E500808E2F /* ToyTeapot.cpp */,
+				12D8E37D1EC228E500808E2F /* ToyTeapot.h */,
+			);
+			path = ToyTest;
+			sourceTree = "<group>";
+		};
+		1228EDB31EB4E732003CEEB3 = {
+			isa = PBXGroup;
+			children = (
+				121FCA351EB64E2300D1070D /* ToyShaders */,
+				1228EDF21EB4E8B1003CEEB3 /* ToyMaster */,
+				1228EDBE1EB4E732003CEEB3 /* Toy */,
+				1228EDD81EB4E732003CEEB3 /* ToyTests */,
+				1228EDE31EB4E732003CEEB3 /* ToyUITests */,
+				1228EDBD1EB4E732003CEEB3 /* Products */,
+				1228EE151EB4FB6B003CEEB3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1228EDBD1EB4E732003CEEB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1228EDBC1EB4E732003CEEB3 /* Toy.app */,
+				1228EDD51EB4E732003CEEB3 /* ToyTests.xctest */,
+				1228EDE01EB4E732003CEEB3 /* ToyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1228EDBE1EB4E732003CEEB3 /* Toy */ = {
+			isa = PBXGroup;
+			children = (
+				1228EDC21EB4E732003CEEB3 /* AppDelegate.h */,
+				1228EDC31EB4E732003CEEB3 /* AppDelegate.mm */,
+				1228EDC51EB4E732003CEEB3 /* ViewController.h */,
+				1228EDC61EB4E732003CEEB3 /* ViewController.mm */,
+				1228EDC81EB4E732003CEEB3 /* Main.storyboard */,
+				1228EDCB1EB4E732003CEEB3 /* Assets.xcassets */,
+				1228EDCD1EB4E732003CEEB3 /* LaunchScreen.storyboard */,
+				1228EDD01EB4E732003CEEB3 /* Info.plist */,
+				1228EDBF1EB4E732003CEEB3 /* Supporting Files */,
+			);
+			path = Toy;
+			sourceTree = "<group>";
+		};
+		1228EDBF1EB4E732003CEEB3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1228EDC01EB4E732003CEEB3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1228EDD81EB4E732003CEEB3 /* ToyTests */ = {
+			isa = PBXGroup;
+			children = (
+				1228EDD91EB4E732003CEEB3 /* ToyTests.m */,
+				1228EDDB1EB4E732003CEEB3 /* Info.plist */,
+			);
+			path = ToyTests;
+			sourceTree = "<group>";
+		};
+		1228EDE31EB4E732003CEEB3 /* ToyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1228EDE41EB4E732003CEEB3 /* ToyUITests.m */,
+				1228EDE61EB4E732003CEEB3 /* Info.plist */,
+			);
+			path = ToyUITests;
+			sourceTree = "<group>";
+		};
+		1228EDF21EB4E8B1003CEEB3 /* ToyMaster */ = {
+			isa = PBXGroup;
+			children = (
+				126FB9FE1EBEE0F800FD27FB /* ToyUtils */,
+				121FCA281EB63CEE00D1070D /* ToyTest */,
+				1228EDF31EB4E8B1003CEEB3 /* ToyComponents */,
+				1228EDF41EB4E8B1003CEEB3 /* ToyMain */,
+				1228EDF61EB4E8B1003CEEB3 /* ToyRenderSystem */,
+			);
+			path = ToyMaster;
+			sourceTree = "<group>";
+		};
+		1228EDF31EB4E8B1003CEEB3 /* ToyComponents */ = {
+			isa = PBXGroup;
+			children = (
+				1229BC491EB5A11D001EB5F3 /* ToyObject.cpp */,
+				1229BC4A1EB5A11D001EB5F3 /* ToyObject.h */,
+			);
+			path = ToyComponents;
+			sourceTree = "<group>";
+		};
+		1228EDF41EB4E8B1003CEEB3 /* ToyMain */ = {
+			isa = PBXGroup;
+			children = (
+				1228EE241EB4FF84003CEEB3 /* ToyGLSL */,
+				1228EE101EB4FAB3003CEEB3 /* ToyPlatform */,
+				1228EDF51EB4E8B1003CEEB3 /* ToyMath */,
+				1228EE0D1EB4F991003CEEB3 /* ToyApplication.cpp */,
+				1228EE0E1EB4F991003CEEB3 /* ToyApplication.h */,
+				1228EE1C1EB4FC6E003CEEB3 /* ToyDirector.cpp */,
+				1228EE1D1EB4FC6E003CEEB3 /* ToyDirector.h */,
+				1229BC4F1EB5A72D001EB5F3 /* ToyCamera.cpp */,
+				1229BC501EB5A72D001EB5F3 /* ToyCamera.h */,
+			);
+			path = ToyMain;
+			sourceTree = "<group>";
+		};
+		1228EDF51EB4E8B1003CEEB3 /* ToyMath */ = {
+			isa = PBXGroup;
+			children = (
+				1228EDF71EB4E8E7003CEEB3 /* Toyvec2.c */,
+				1228EDF81EB4E8E7003CEEB3 /* Toyvec2.h */,
+				1228EDFA1EB4E9DE003CEEB3 /* Toyvec3.c */,
+				1228EDFB1EB4E9DE003CEEB3 /* Toyvec3.h */,
+				1228EDFD1EB4EA01003CEEB3 /* Toyvec4.c */,
+				1228EDFE1EB4EA01003CEEB3 /* Toyvec4.h */,
+				1228EE001EB4EA27003CEEB3 /* Toymat3.c */,
+				1228EE011EB4EA27003CEEB3 /* Toymat3.h */,
+				1228EE031EB4EA4A003CEEB3 /* Toymat4.c */,
+				1228EE041EB4EA4A003CEEB3 /* Toymat4.h */,
+				1228EE061EB4ED3C003CEEB3 /* Toymathcommon.h */,
+				1228EE071EB4EE52003CEEB3 /* Toymatstack.c */,
+				1228EE081EB4EE52003CEEB3 /* Toymatstack.h */,
+				1228EE0A1EB4EED3003CEEB3 /* ToyGLmatrix.c */,
+				1228EE0B1EB4EED3003CEEB3 /* ToyGLmatrix.h */,
+				121FCA2C1EB640B800D1070D /* Toymath.h */,
+			);
+			path = ToyMath;
+			sourceTree = "<group>";
+		};
+		1228EDF61EB4E8B1003CEEB3 /* ToyRenderSystem */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ToyRenderSystem;
+			sourceTree = "<group>";
+		};
+		1228EE101EB4FAB3003CEEB3 /* ToyPlatform */ = {
+			isa = PBXGroup;
+			children = (
+				1228EE111EB4FAD7003CEEB3 /* iOS */,
+				1228EE2F1EB50EEB003CEEB3 /* ToyFileUtils.cpp */,
+				1228EE301EB50EEB003CEEB3 /* ToyFileUtils.h */,
+			);
+			path = ToyPlatform;
+			sourceTree = "<group>";
+		};
+		1228EE111EB4FAD7003CEEB3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1228EE121EB4FB14003CEEB3 /* ToyLoop.h */,
+				1228EE131EB4FB14003CEEB3 /* ToyLoop.mm */,
+				1228EE1A1EB4FBED003CEEB3 /* ToyApplication.mm */,
+				1228EE211EB4FDBC003CEEB3 /* ToyGLview.h */,
+				1228EE221EB4FDBC003CEEB3 /* ToyGLview.mm */,
+				1228EE281EB5055A003CEEB3 /* ToyGLFrameBuffer.mm */,
+				1228EE321EB50FD2003CEEB3 /* ToyFileUtils.mm */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		1228EE151EB4FB6B003CEEB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1228EE181EB4FB71003CEEB3 /* OpenGLES.framework */,
+				1228EE161EB4FB6B003CEEB3 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1228EE241EB4FF84003CEEB3 /* ToyGLSL */ = {
+			isa = PBXGroup;
+			children = (
+				1228EE251EB4FFB4003CEEB3 /* ToyGLFrameBuffer.cpp */,
+				1228EE261EB4FFB4003CEEB3 /* ToyGLFrameBuffer.h */,
+				1228EE2C1EB50D48003CEEB3 /* ToyGLProgram.cpp */,
+				1228EE2D1EB50D48003CEEB3 /* ToyGLProgram.h */,
+				1229BC4C1EB5A3AA001EB5F3 /* ToyGLProgramCache.cpp */,
+				1229BC4D1EB5A3AA001EB5F3 /* ToyGLProgramCache.h */,
+			);
+			path = ToyGLSL;
+			sourceTree = "<group>";
+		};
+		126FB9FE1EBEE0F800FD27FB /* ToyUtils */ = {
+			isa = PBXGroup;
+			children = (
+				126FB9FF1EBEE10800FD27FB /* ToyObjLoader.cpp */,
+				126FBA001EBEE10800FD27FB /* ToyObjLoader.h */,
+			);
+			path = ToyUtils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1228EDBB1EB4E732003CEEB3 /* Toy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1228EDE91EB4E732003CEEB3 /* Build configuration list for PBXNativeTarget "Toy" */;
+			buildPhases = (
+				1228EDB81EB4E732003CEEB3 /* Sources */,
+				1228EDB91EB4E732003CEEB3 /* Frameworks */,
+				1228EDBA1EB4E732003CEEB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Toy;
+			productName = Toy;
+			productReference = 1228EDBC1EB4E732003CEEB3 /* Toy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1228EDD41EB4E732003CEEB3 /* ToyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1228EDEC1EB4E732003CEEB3 /* Build configuration list for PBXNativeTarget "ToyTests" */;
+			buildPhases = (
+				1228EDD11EB4E732003CEEB3 /* Sources */,
+				1228EDD21EB4E732003CEEB3 /* Frameworks */,
+				1228EDD31EB4E732003CEEB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1228EDD71EB4E732003CEEB3 /* PBXTargetDependency */,
+			);
+			name = ToyTests;
+			productName = ToyTests;
+			productReference = 1228EDD51EB4E732003CEEB3 /* ToyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1228EDDF1EB4E732003CEEB3 /* ToyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1228EDEF1EB4E732003CEEB3 /* Build configuration list for PBXNativeTarget "ToyUITests" */;
+			buildPhases = (
+				1228EDDC1EB4E732003CEEB3 /* Sources */,
+				1228EDDD1EB4E732003CEEB3 /* Frameworks */,
+				1228EDDE1EB4E732003CEEB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1228EDE21EB4E732003CEEB3 /* PBXTargetDependency */,
+			);
+			name = ToyUITests;
+			productName = ToyUITests;
+			productReference = 1228EDE01EB4E732003CEEB3 /* ToyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1228EDB41EB4E732003CEEB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = ZerLon;
+				TargetAttributes = {
+					1228EDBB1EB4E732003CEEB3 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+					1228EDD41EB4E732003CEEB3 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1228EDBB1EB4E732003CEEB3;
+					};
+					1228EDDF1EB4E732003CEEB3 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1228EDBB1EB4E732003CEEB3;
+					};
+				};
+			};
+			buildConfigurationList = 1228EDB71EB4E732003CEEB3 /* Build configuration list for PBXProject "Toy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1228EDB31EB4E732003CEEB3;
+			productRefGroup = 1228EDBD1EB4E732003CEEB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1228EDBB1EB4E732003CEEB3 /* Toy */,
+				1228EDD41EB4E732003CEEB3 /* ToyTests */,
+				1228EDDF1EB4E732003CEEB3 /* ToyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1228EDBA1EB4E732003CEEB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				121FCA361EB64E2300D1070D /* ToyShaders in Resources */,
+				1228EDCF1EB4E732003CEEB3 /* LaunchScreen.storyboard in Resources */,
+				1228EDCC1EB4E732003CEEB3 /* Assets.xcassets in Resources */,
+				1228EDCA1EB4E732003CEEB3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1228EDD31EB4E732003CEEB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1228EDDE1EB4E732003CEEB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1228EDB81EB4E732003CEEB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1228EE231EB4FDBC003CEEB3 /* ToyGLview.mm in Sources */,
+				1228EE0F1EB4F991003CEEB3 /* ToyApplication.cpp in Sources */,
+				1228EE2E1EB50D48003CEEB3 /* ToyGLProgram.cpp in Sources */,
+				1228EDF91EB4E8E7003CEEB3 /* Toyvec2.c in Sources */,
+				1228EE1E1EB4FC6E003CEEB3 /* ToyDirector.cpp in Sources */,
+				1228EDC71EB4E732003CEEB3 /* ViewController.mm in Sources */,
+				1229BC4E1EB5A3AA001EB5F3 /* ToyGLProgramCache.cpp in Sources */,
+				1228EDFF1EB4EA01003CEEB3 /* Toyvec4.c in Sources */,
+				1228EDFC1EB4E9DE003CEEB3 /* Toyvec3.c in Sources */,
+				1228EE0C1EB4EED3003CEEB3 /* ToyGLmatrix.c in Sources */,
+				1228EE271EB4FFB4003CEEB3 /* ToyGLFrameBuffer.cpp in Sources */,
+				1228EE331EB50FD2003CEEB3 /* ToyFileUtils.mm in Sources */,
+				1229BC511EB5A72D001EB5F3 /* ToyCamera.cpp in Sources */,
+				1228EE141EB4FB14003CEEB3 /* ToyLoop.mm in Sources */,
+				127E51F31EB78CB8008D0E99 /* ToySceneAds.cpp in Sources */,
+				127E51E31EB6E0AC008D0E99 /* ToySceneDiffuse.cpp in Sources */,
+				1228EE021EB4EA27003CEEB3 /* Toymat3.c in Sources */,
+				126FBA011EBEE10800FD27FB /* ToyObjLoader.cpp in Sources */,
+				1229BC4B1EB5A11D001EB5F3 /* ToyObject.cpp in Sources */,
+				1228EDC41EB4E732003CEEB3 /* AppDelegate.mm in Sources */,
+				12D8E37E1EC228E500808E2F /* ToyTeapot.cpp in Sources */,
+				1228EE291EB5055A003CEEB3 /* ToyGLFrameBuffer.mm in Sources */,
+				1228EE311EB50EEB003CEEB3 /* ToyFileUtils.cpp in Sources */,
+				1228EE1B1EB4FBEE003CEEB3 /* ToyApplication.mm in Sources */,
+				127E51E61EB6FA82008D0E99 /* ToyTest.cpp in Sources */,
+				127E51E91EB703D9008D0E99 /* ToyTorus.cpp in Sources */,
+				1228EE051EB4EA4A003CEEB3 /* Toymat4.c in Sources */,
+				1228EDC11EB4E732003CEEB3 /* main.m in Sources */,
+				1228EE091EB4EE52003CEEB3 /* Toymatstack.c in Sources */,
+				121FCA2B1EB63D1300D1070D /* ToyCube.cpp in Sources */,
+				121FCA321EB644F700D1070D /* ToyScene.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1228EDD11EB4E732003CEEB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1228EDDA1EB4E732003CEEB3 /* ToyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1228EDDC1EB4E732003CEEB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1228EDE51EB4E732003CEEB3 /* ToyUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1228EDD71EB4E732003CEEB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1228EDBB1EB4E732003CEEB3 /* Toy */;
+			targetProxy = 1228EDD61EB4E732003CEEB3 /* PBXContainerItemProxy */;
+		};
+		1228EDE21EB4E732003CEEB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1228EDBB1EB4E732003CEEB3 /* Toy */;
+			targetProxy = 1228EDE11EB4E732003CEEB3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1228EDC81EB4E732003CEEB3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1228EDC91EB4E732003CEEB3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1228EDCD1EB4E732003CEEB3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1228EDCE1EB4E732003CEEB3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1228EDE71EB4E732003CEEB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1228EDE81EB4E732003CEEB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1228EDEA1EB4E732003CEEB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Toy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZerLon.Toy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1228EDEB1EB4E732003CEEB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Toy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZerLon.Toy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1228EDED1EB4E732003CEEB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ToyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZerLon.ToyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Toy.app/Toy";
+			};
+			name = Debug;
+		};
+		1228EDEE1EB4E732003CEEB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ToyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZerLon.ToyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Toy.app/Toy";
+			};
+			name = Release;
+		};
+		1228EDF01EB4E732003CEEB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ToyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZerLon.ToyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Toy;
+			};
+			name = Debug;
+		};
+		1228EDF11EB4E732003CEEB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ToyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZerLon.ToyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Toy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1228EDB71EB4E732003CEEB3 /* Build configuration list for PBXProject "Toy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1228EDE71EB4E732003CEEB3 /* Debug */,
+				1228EDE81EB4E732003CEEB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1228EDE91EB4E732003CEEB3 /* Build configuration list for PBXNativeTarget "Toy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1228EDEA1EB4E732003CEEB3 /* Debug */,
+				1228EDEB1EB4E732003CEEB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1228EDEC1EB4E732003CEEB3 /* Build configuration list for PBXNativeTarget "ToyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1228EDED1EB4E732003CEEB3 /* Debug */,
+				1228EDEE1EB4E732003CEEB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1228EDEF1EB4E732003CEEB3 /* Build configuration list for PBXNativeTarget "ToyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1228EDF01EB4E732003CEEB3 /* Debug */,
+				1228EDF11EB4E732003CEEB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1228EDB41EB4E732003CEEB3 /* Project object */;
+}
