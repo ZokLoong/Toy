@@ -10,6 +10,7 @@
 #include "../ToyMain/ToyPlatform/ToyFileUtils.h"
 #include "../ToyMain/ToyMath/Toymath.h"
 #include "../ToyMain/ToyDirector.h"
+#include "../ToyUtils/ToyMesh.h"
 
 static ToySceneAds s_scene;
 ToySceneAds *ToySceneAds::sharedScene() {
@@ -31,6 +32,9 @@ ToySceneAds::~ToySceneAds() {
     if (teapot) {
         delete teapot;
         teapot = 0;
+    }
+    if (monkey) {
+        monkey = ToyObjFree(monkey);
     }
 }
 
@@ -54,11 +58,15 @@ void ToySceneAds::init() {
         // torus = new ToyTorus();
         // torus->init(2.5, 2.0f, 30, 30);
         
+        /*
         Toymat4 transf;
         Toymat4Identity(&transf);
         Toymat4Translatef(&transf, 0.5f, 0.8f, 0.3f);
         teapot = new ToyTeapot();
-        teapot->init(13, transf);
+        teapot->init(13, transf);*/
+        
+        monkey = ToyObjRead("ToyShaders/model.obj", ToyFileUtils::getHomeDir().c_str());
+        ToyObjBuild(monkey);
     }
     if (program && program->isLinked()) {
         program->use();
@@ -106,11 +114,11 @@ void ToySceneAds::visit() {
         
         ToyGLmatrixMode(TOY_GL_MODELVIEW);
         ToyGLmatrixPush();
-        ToyGLtranslatef(sw/2, sh/2 - 12, 0.0f);
+        ToyGLtranslatef(sw/2, sh/2, 0.0f);
         ToyGLrotatef(0.0f, 1.0f, 1.0f, degree);
         ToyGLrotatef(1.0f, 0.0f, 0.0f, -45);
         // ToyGLrotatef(0.0f, 0.0f, 1.0f, 90);
-        ToyGLscalef(3.0f, 3.0f, 3.0f);
+        ToyGLscalef(9.0f, 9.0f, 9.0f);
         ToyGLmatrixGet(&modelview);
         ToyGLmatrixPop();
         
@@ -136,5 +144,8 @@ void ToySceneAds::render() {
     }
     if (teapot) {
         teapot->render();
+    }
+    if (monkey) {
+        ToyObjDraw(monkey);
     }
 }

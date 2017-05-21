@@ -47,6 +47,9 @@ public:
     
     bool isLinked() { return linked; }
     
+    void setName(std::string name) { this->name = name; }
+    std::string getName() { return name; }
+    
 protected:
     GLuint program;
     GLuint vertShader;
@@ -55,6 +58,8 @@ protected:
     TOY_GLSL_UNIFORMS uniforms;
     
     bool linked;
+    
+    std::string name;
 };
 
 #endif /* ToyGLProgram_h */

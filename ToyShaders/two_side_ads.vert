@@ -44,10 +44,23 @@ vec3 phongModel(vec3 position, vec3 norm) {
     return Ambient + Diffuse + Spec;
 }
 
+// This function is simple for test flat, because OpenGL ES2.0 is not support flat
+// But the result is not very good
+/*
+vec3 flatLight(vec3 color, float s) {
+    float x = ceil(color.x * s)/s;
+    float y = ceil(color.y * s)/s;
+    float z = ceil(color.z * s)/s;
+    
+    return vec3(x, y, z);
+}
+*/
+
 void main() {
     vec3 tnorm, tpos;
     getEyeSpace(tnorm, tpos);
     
+    // lightIntensityFront = flatLight(phongModel(tpos, tnorm), 5.0);
     lightIntensityFront = phongModel(tpos, tnorm);
     lightIntensityBack = phongModel(tpos, -tnorm);
     

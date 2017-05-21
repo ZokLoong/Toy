@@ -1,0 +1,68 @@
+# Blender MTL File: 'untitled.blend'
+# Material Count: 6
+newmtl background_background.png
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ni 1.000000
+d 1.000000
+illum 0
+map_Kd /Users/rom/Desktop/BOOK/content/SDK/data/chapter4-1/background.png
+
+
+newmtl balloon_balloon.png
+Ns 66.666667
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ni 1.000000
+d 0.650000
+illum 2
+map_Kd /Users/rom/Desktop/BOOK/content/SDK/data/chapter4-1/balloon.png
+
+
+newmtl ground_grass.png
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /Users/rom/Desktop/BOOK/content/SDK/data/chapter4-1/grass.png
+
+
+newmtl leaf_leaf.png
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd /Users/rom/Desktop/BOOK/content/SDK/data/chapter4-1/leaf.png
+
+
+newmtl momo_momo.png
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /Users/rom/Desktop/BOOK/content/SDK/data/chapter4-1/momo.png
+
+
+newmtl tree_tree.png
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /Users/rom/Desktop/BOOK/content/SDK/data/chapter4-1/tree.png
+
+

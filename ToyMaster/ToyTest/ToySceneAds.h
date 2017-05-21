@@ -14,6 +14,7 @@
 #include "../ToyMain/ToyGLSL/ToyGLProgramCache.h"
 #include "ToyTorus.h"
 #include "ToyTeapot.h"
+#include "../ToyUtils/ToyMesh.h"
 
 class ToySceneAds : public ToyObject {
 public:
@@ -30,6 +31,7 @@ protected:
     ToyGLProgram *program;
     ToyTorus *torus;
     ToyTeapot *teapot;
+    ToyObj *monkey;
 };
 
 #endif /* ToySceneAds_h */

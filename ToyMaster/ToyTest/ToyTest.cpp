@@ -9,8 +9,8 @@
 #include "ToyTest.h"
 
 ToyObject *ToyTest::getCurrentTest() {
-    // ToySceneDiffuse::sharedScene()->init();
-    // return ToySceneDiffuse::sharedScene();
+//    ToySceneDiffuse::sharedScene()->init();
+//    return ToySceneDiffuse::sharedScene();
     ToySceneAds::sharedScene()->init();
     return ToySceneAds::sharedScene();
 }

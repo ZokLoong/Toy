@@ -39,6 +39,7 @@ ToyGLProgram *ToyGLProgramCache::createProgram(const char *tag, const GLchar *ve
     program->attachShader(vertSource, fragSource);
     // program->use();
     
+    program->setName(std::string(tag));
     programs[tag] = program;
     
     return program;
