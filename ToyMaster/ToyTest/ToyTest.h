@@ -14,6 +14,7 @@
 #include "ToyScene.h"
 #include "ToySceneDiffuse.h"
 #include "ToySceneAds.h"
+#include "ToyScenePreforated.h"
 
 class ToyTest {
 public:

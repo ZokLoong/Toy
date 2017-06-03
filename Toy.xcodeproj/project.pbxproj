@@ -10,6 +10,7 @@
 		121FCA2B1EB63D1300D1070D /* ToyCube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 121FCA291EB63D1300D1070D /* ToyCube.cpp */; };
 		121FCA321EB644F700D1070D /* ToyScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 121FCA301EB644F700D1070D /* ToyScene.cpp */; };
 		121FCA361EB64E2300D1070D /* ToyShaders in Resources */ = {isa = PBXBuildFile; fileRef = 121FCA351EB64E2300D1070D /* ToyShaders */; };
+		12209F381EE05C6200C722CD /* ToyScenePreforated.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12209F361EE05C6200C722CD /* ToyScenePreforated.cpp */; };
 		1228EDC11EB4E732003CEEB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1228EDC01EB4E732003CEEB3 /* main.m */; };
 		1228EDC41EB4E732003CEEB3 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1228EDC31EB4E732003CEEB3 /* AppDelegate.mm */; };
 		1228EDC71EB4E732003CEEB3 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1228EDC61EB4E732003CEEB3 /* ViewController.mm */; };
@@ -72,6 +73,8 @@
 		121FCA301EB644F700D1070D /* ToyScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToyScene.cpp; sourceTree = "<group>"; };
 		121FCA311EB644F700D1070D /* ToyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToyScene.h; sourceTree = "<group>"; };
 		121FCA351EB64E2300D1070D /* ToyShaders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ToyShaders; sourceTree = "<group>"; };
+		12209F361EE05C6200C722CD /* ToyScenePreforated.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ToyScenePreforated.cpp; sourceTree = "<group>"; };
+		12209F371EE05C6200C722CD /* ToyScenePreforated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToyScenePreforated.h; sourceTree = "<group>"; };
 		1228EDBC1EB4E732003CEEB3 /* Toy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Toy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1228EDC01EB4E732003CEEB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1228EDC21EB4E732003CEEB3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -188,6 +191,8 @@
 				12D8E37B1EC228BC00808E2F /* ToyTeapotData.h */,
 				12D8E37C1EC228E500808E2F /* ToyTeapot.cpp */,
 				12D8E37D1EC228E500808E2F /* ToyTeapot.h */,
+				12209F361EE05C6200C722CD /* ToyScenePreforated.cpp */,
+				12209F371EE05C6200C722CD /* ToyScenePreforated.h */,
 			);
 			path = ToyTest;
 			sourceTree = "<group>";
@@ -542,6 +547,7 @@
 				1228EDC11EB4E732003CEEB3 /* main.m in Sources */,
 				1256B16D1EC7F9DF00363865 /* ToyMesh.cpp in Sources */,
 				1228EE091EB4EE52003CEEB3 /* Toymatstack.c in Sources */,
+				12209F381EE05C6200C722CD /* ToyScenePreforated.cpp in Sources */,
 				121FCA2B1EB63D1300D1070D /* ToyCube.cpp in Sources */,
 				121FCA321EB644F700D1070D /* ToyScene.cpp in Sources */,
 			);
